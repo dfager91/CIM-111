@@ -1,0 +1,52 @@
+
+a:link {
+  text-decoration: none;
+  font-family: 'Bangers';font-size: 22px;
+  color: red;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+.body {
+    font-family: 'Bungee Shade';font-size: 22px;
+}
+
+.thick{
+  font-weight: bold;
+}
+
+
+.background {
+	height: 1000px; 
+	width: 1500px; 
+	background-color: yellow;
+	background-size: cover; 
+}
+
+#dashed {outline-style: dashed;}
+
+#ul {
+  background: red;
+  padding: 20px;
+  list-style-type: disc; 
+  list-style-position: inside; 
+}
+
+.footer{
+	background-image: url("../images/ironmanheart.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	padding: 15px;
+}
