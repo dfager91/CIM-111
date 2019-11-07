@@ -1,0 +1,74 @@
+		
+		.container{
+			display: grid;
+			height: 100%;
+			grid-template-rows: 100px 25px 400px 200px 100px;
+			grid-template-areas: "header header"
+								 "nav nav"
+								 "article aside"
+								 "footer footer";
+		}
+
+		header{
+			grid-area: header;
+			background-color: red;
+			font-family: 'Playfair Display', serif; font-size: 20px;
+
+		}
+
+		nav{
+			grid-area: nav;
+			background-color: grey;
+			text-align: right;
+
+		}
+		article{
+			grid-area: article;
+			background-size: cover;
+			    margin: 10px;
+       			padding: 10px;
+
+		}
+		aside{
+			grid-area: aside;
+			background-color: yellow;
+			font-family: 'Libre Baskerville', serif; font-size: 15px;
+			    margin: 10px;
+                padding: 10px;
+
+		}
+
+		footer{
+			grid-area: footer;
+			background-color: grey;
+			font-style: italic;
+			text-align: center;
+		}
+		    a{
+	margin-right: 10px;
+	text-decoration: none;
+    }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+				@media only screen and (min-width: 500px) {
+				header{
+					background-color: grey;
+				}
+
+
+		@media only screen and (min-width: 768px) {
+				header{
+					background-color: red;
+				}

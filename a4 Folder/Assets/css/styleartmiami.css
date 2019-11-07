@@ -1,0 +1,84 @@
+.container{
+			display: grid;
+			height: 100%;
+			grid-template-rows: 100px 25px 200px 400px 100px;
+			grid-template-areas: "header header"
+								 "nav nav"
+								 "article article"
+								 "aside aside"
+								 "footer footer";
+		}
+
+		header{
+			grid-area: header;
+			background-color: red;
+
+		}
+
+		nav{
+			grid-area: nav;
+			background-color: grey;
+			text-align: right;
+
+		}
+		article{
+			grid-area: article;
+			background-color: yellow;
+			font-family: 'Lobster', cursive; font-size: 15px;
+			text-align: center;
+			    margin: 10px;
+       			padding: 10px;
+
+		}
+		aside{
+			grid-area: aside;
+			background-color: red;
+			text-align: center; 
+		}
+
+		.gallery{
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+		  justify-content: center;	
+		  align-content: center;
+		  background-color: gray;
+	}
+
+		footer{
+			grid-area: footer;
+			background-color: grey;
+			font-style: italic;
+			text-align: center;
+		}
+		    a{
+	margin-right: 10px;
+	text-decoration: none;
+    }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+				@media only screen and (min-width: 500px) {
+				header{
+					background-color: grey;
+				}
+
+
+		@media only screen and (min-width: 768px) {
+				header{
+					background-color: red;
+				}
