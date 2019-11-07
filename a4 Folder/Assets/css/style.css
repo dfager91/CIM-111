@@ -2,11 +2,12 @@
 		.container{
 			display: grid;
 			height: 100%;
-			grid-template-rows: 100px 25px 400px 200px 100px;
-			grid-template-areas: "header header"
-								 "nav nav"
-								 "article aside"
-								 "footer footer";
+			grid-template-rows: 100px 25px 400px 400px 100px;
+			grid-template-areas: "header"
+								 "nav"
+								 "article"
+								 "aside"
+								 "footer";
 		}
 
 		header{
@@ -31,6 +32,7 @@
 		}
 		aside{
 			grid-area: aside;
+			background-size: cover;
 			background-color: yellow;
 			font-family: 'Libre Baskerville', serif; font-size: 15px;
 			    margin: 10px;
@@ -65,10 +67,31 @@ a:hover {
 				@media only screen and (min-width: 500px) {
 				header{
 					background-color: grey;
+}
+
+		.container{
+			display: grid;
+			height: 100%;
+			grid-template-rows: 100px 25px 400px 200px 100px;
+			grid-template-areas: "header header"
+								 "nav nav"
+								 "article aside"
+								 "footer footer";
+		}
 				}
 
 
 		@media only screen and (min-width: 768px) {
 				header{
 					background-color: red;
+						}
+		.container{
+			display: grid;
+			height: 100%;
+			grid-template-rows: 100px 25px 400px 200px 100px;
+			grid-template-areas: "header header"
+								 "nav nav"
+								 "article aside"
+								 "footer footer";
+		}
 				}
